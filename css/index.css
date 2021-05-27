@@ -1,4 +1,18 @@
 :root {
+  --purple: #310a90;
+  --green: #42e2b8;
+
+  --fontBase: "Poppins", sans-serif;
+  --headline1: bold 95px / 153.71px var(--fontBase);
+  --headline2: bold 59px / 95px var(--fontBase);
+  --headline3: bold 48px / 77px var(--fontBase);
+  --headline4: bold 34px / 55px var(--fontBase);
+  --headline5: bold 24px / 38px var(--fontBase);
+  --body1: 16px / 25px var(--fontBase);
+  --body2: 24px / 22px var(--fontBase);
+  --button: bold 14px / 22px var(--fontBase);
+  --caption: 12px / 19px var(--fontBase);
+
   --gradient: radial-gradient(
       41.48% 11.48% at 2.38% 8.52%,
       #747de9 0%,
@@ -10,6 +24,8 @@
 body {
   background: var(--gradient);
   min-block-size: 100vh;
+  font: var(--body1);
+  color: var(--green);
 }
 
 .header {
