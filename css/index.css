@@ -34,6 +34,9 @@ body {
   justify-content: space-between;
   align-items: center;
   block-size: 80px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
 }
 
 .hero {
@@ -65,6 +68,31 @@ body {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    gap: 32px;
+  }
+
+  .hero-description {
+    order: 1;
+    max-inline-size: 450px;
+  }
+
+  .hero-image {
+    order: 2;
+    flex: 1;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-image img {
+    inline-size: 500px;
+    block-size: 504px;
+  }
+}
+
 .wrapper {
   max-inline-size: 1158px;
   padding-inline-end: 16px;
@@ -73,6 +101,33 @@ body {
 }
 
 /* 🧩 Components */
+
+.menu {
+  display: none;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu ul a {
+  font: var(--button);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.menu ul a.is-active {
+  color: var(--purple);
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: block;
+  }
+}
 
 .button {
   display: inline-block;
