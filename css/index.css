@@ -65,6 +65,15 @@ body {
   display: block;
 }
 
+.wrapper {
+  max-inline-size: 1158px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
+  margin: auto;
+}
+
+/* 🧩 Components */
+
 .button {
   display: inline-block;
   color: var(--white);
