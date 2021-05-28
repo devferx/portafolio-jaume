@@ -13,24 +13,28 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <img
-          src="./images/LOGO.svg"
-          width="70"
-          height="20"
-          alt="Logo muy bonito"
-        />
-        <nav class="menu" aria-label="main-navigation">
-          <ul>
-            <li><a class="is-active" href="#main">Hola</a></li>
-            <li><a href="#project">Proyectos</a></li>
-            <li><a href="#contact">Hablemos</a></li>
-          </ul>
-        </nav>
-        <button class="button">Curriculum</button>
-      </header>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-content">
+          <img
+            src="./images/LOGO.svg"
+            width="70"
+            height="20"
+            alt="Logo muy bonito"
+          />
+          <nav class="menu" aria-label="main-navigation">
+            <ul>
+              <li><a class="is-active" href="#main">Hola</a></li>
+              <li><a href="#project">Proyectos</a></li>
+              <li><a href="#contact">Hablemos</a></li>
+            </ul>
+          </nav>
+          <button class="button">Curriculum</button>
+        </div>
+      </div>
+    </header>
 
+    <div class="wrapper">
       <section aria-label="Main" class="hero" id="main">
         <div class="hero-image">
           <img src="./images/jaume.png" width="338" height="330" alt="Jaume" />
@@ -60,7 +64,7 @@
         </div>
       </section>
 
-      <article class="project">
+      <article id="project" class="project">
         <div class="project-image">
           <img src="./images/leonidas-esteban.png" alt="Leonidas Esteban" />
         </div>
@@ -142,7 +146,7 @@
         <p class="testimonial-title">MARCO CORTEZ / NETNET</p>
       </article>
 
-      <form class="form" method="GET">
+      <form id="contact" class="form" method="GET">
         <div class="form-content">
           <h2 class="title">HABLEMOS</h2>
           <p>

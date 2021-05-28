@@ -31,14 +31,17 @@ body {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  block-size: 80px;
   position: sticky;
   top: 0;
   backdrop-filter: blur(10px);
   z-index: 999;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  block-size: 80px;
 }
 
 .hero {
@@ -217,6 +220,7 @@ body {
   .project {
     display: flex;
     align-items: center;
+    gap: 32px;
     padding-block-start: 80px;
     padding-block-end: 80px;
   }
