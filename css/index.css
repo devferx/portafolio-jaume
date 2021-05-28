@@ -22,6 +22,10 @@
     linear-gradient(135deg, #72edf2 0%, #5151e5 100%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--gradient);
   min-block-size: 100vh;
@@ -78,6 +82,7 @@ body {
   .hero {
     display: flex;
     gap: 32px;
+    padding-block-start: 96px;
   }
 
   .hero-description {
@@ -186,6 +191,35 @@ body {
 @media screen and (min-width: 768px) {
   .menu {
     display: block;
+  }
+}
+
+.comment-section {
+  padding-block-start: 80px;
+  padding-block-end: 80px;
+  text-align: center;
+}
+
+.comment-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 39px;
+}
+
+.comment-desc {
+  font: var(--headline5);
+}
+
+@media screen and (min-width: 768px) {
+  .comment-section {
+    padding-block-start: 200px;
+    padding-block-end: 200px;
+  }
+  .comment-title {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 55px;
   }
 }
 
